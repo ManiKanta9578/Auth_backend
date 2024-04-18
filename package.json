@@ -1,14 +1,13 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "engines": {
     "node": "20.x"
   },
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
