@@ -22,11 +22,11 @@ app.use(cors());
 app.use(morgan('tiny'));
 app.disable('x-powered-by');
 
-const PORT = process.env.PORT;
+const PORT = 8080;
 
 /** HTTP Get Request */
-// app.get('/', (req, res) => res.status(201).json("Home Get Request"));
-app.get("/", (req, res) => res.send("Home Get Request"));
+app.get('/', (req, res) => res.status(201).json("Home Get Request"));
+// app.get("/", (req, res) => res.send("Home Get Request"));
 
 /** API routes */
 app.use('/api', router);
